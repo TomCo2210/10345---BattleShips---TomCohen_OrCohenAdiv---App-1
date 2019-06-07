@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:screenOrientation="portrait"
+    android:background="@drawable/background_whitened"
+    tools:context=".WinnerActivity">
+
+
+    <TextView
+        android:id="@+id/winnerBanner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/btnToSideMargin"
+        android:layout_marginTop="@dimen/btnToSideMargin"
+        android:layout_marginEnd="@dimen/btnToSideMargin"
+        android:fontFamily="casual"
+        android:maxLines="2"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/titleSize"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Computer Wins!" />
+
+    <TextView
+        android:id="@+id/chooseDifficulty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/btnToSideMargin"
+        android:layout_marginTop="@dimen/titleToTitleMargin"
+        android:fontFamily="casual"
+        android:text="@string/play_again"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/chooseDifficultySize"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/winnerBanner" />
+
+    <Button
+        android:id="@+id/EasyBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/btnToSideMargin"
+        android:layout_marginTop="@dimen/btnToTextMargin"
+        android:layout_marginEnd="@dimen/btnToSideMargin"
+        android:text="@string/easy"
+        android:tag="EASY"
+        android:onClick="onLevelButtonClicked"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chooseDifficulty" />
+
+    <Button
+        android:id="@+id/MediumBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="@dimen/btnToBtnMargin"
+        android:layout_marginEnd="8dp"
+        android:text="@string/medium"
+        android:tag="MEDIUM"
+        android:onClick="onLevelButtonClicked"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EasyBtn" />
+
+    <Button
+        android:id="@+id/HardBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="@dimen/btnToBtnMargin"
+        android:layout_marginEnd="8dp"
+        android:text="@string/hard"
+        android:tag="HARD"
+        android:onClick="onLevelButtonClicked"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MediumBtn" />
+
+    <Button
+        android:id="@+id/instructionsBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
+        android:onClick="onInstructionButtonCLicked"
+        android:text="@string/instructions"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2f4455</color>
+    <color name="colorPrimaryDark">#2a4051</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="white">#ffffff</color>
+    <color name="ship1">#477949</color>
+    <color name="ship2">#4185b9</color>
+    <color name="ship3">#b44545</color>
+    <color name="ship4">#683a93</color>
+    <color name="ship5">#93672f</color>
+    <color name="Black">#FF000000</color>
+</resources>

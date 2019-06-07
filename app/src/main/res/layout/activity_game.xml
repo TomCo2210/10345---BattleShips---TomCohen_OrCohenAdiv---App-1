@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_whitened"
+    android:screenOrientation="portrait"
+
+    tools:context=".GameActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/topView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/topViewHeight"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="@dimen/topViewMargins"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="@dimen/topViewMargins"
+        app:layout_constraintBottom_toTopOf="@+id/opponentBoardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.32"
+        app:layout_constraintVertical_chainStyle="spread">
+
+        <TextView
+            android:id="@+id/yourBoard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/yourBoardMargins"
+            android:text="@string/your_board"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/boardTitlesSizes"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/turns"
+            android:layout_width="@dimen/matchConstraint"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/playerMargins"
+            android:layout_marginTop="@dimen/playerMargins"
+            android:layout_marginEnd="@dimen/playerMargins"
+            android:maxLines="2"
+            android:textAlignment="center"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/boardTitlesSizes"
+            app:layout_constraintEnd_toStartOf="@+id/playerBoardView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/yourBoard"
+            tools:text="Computer's Turn" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="@dimen/pBarMargins"
+            android:layout_marginEnd="@dimen/pBarMargins"
+            android:indeterminate="true"
+            app:layout_constraintEnd_toStartOf="@+id/playerBoardView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/turns" />
+
+
+        <GridView
+            android:id="@+id/playerBoardView"
+            android:layout_width="@dimen/gridWidth"
+            android:layout_height="@dimen/gridHeight"
+            android:layout_marginStart="@dimen/gridSideMargins"
+            android:layout_marginEnd="@dimen/gridMargin"
+            android:layout_marginBottom="@dimen/gridMargin"
+            android:columnWidth="@dimen/colWidth"
+            android:horizontalSpacing="@dimen/spacing"
+            android:numColumns="5"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="@dimen/spacing"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/yourBoard"
+            app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+    <GridView
+        android:id="@+id/opponentBoardView"
+        android:layout_width="@dimen/gridHeight"
+        android:layout_height="@dimen/gridWidth"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="@dimen/gridMargin"
+        android:layout_marginBottom="@dimen/gridMargin"
+        android:columnWidth="@dimen/colWidth"
+        android:horizontalSpacing="@dimen/spacing"
+        android:numColumns="5"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="@dimen/spacing"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topView" />
+
+    <TextView
+        android:id="@+id/opponentBoard"
+        android:layout_width="@dimen/opponentBoardTitle"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/yourBoardMargins"
+        android:text="@string/opponentBoard"
+        android:textColor="@color/Black"
+        android:textSize="@dimen/boardTitlesSizes"
+        app:layout_constraintBottom_toBottomOf="@+id/topView"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>

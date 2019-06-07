@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="titleSize">50sp</dimen>
+    <dimen name="btnToBtnMargin">20dp</dimen>
+    <dimen name="btnToTextMargin">24dp</dimen>
+    <dimen name="btnToSideMargin">8dp</dimen>
+    <dimen name="titleToTitleMargin">50dp</dimen>
+    <dimen name="chooseDifficultySize">20sp</dimen>
+    <dimen name="activity_vertical_margin">8dp</dimen>
+    <dimen name="activity_horizontal_margin">8dp</dimen>
+    <dimen name="instMargin">8dp</dimen>
+    <dimen name="spacing">2dp</dimen>
+    <dimen name="colWidth">0dp</dimen>
+    <dimen name="gridMargin">8dp</dimen>
+    <dimen name="enlargedGridMargin">16dp</dimen>
+    <dimen name="gridWidth">0dp</dimen>
+    <dimen name="gridHeight">0dp</dimen>
+    <dimen name="pBarMargins">8dp</dimen>
+    <dimen name="playerMargins">8dp</dimen>
+    <dimen name="yourBoardMargins">16dp</dimen>
+    <dimen name="boardTitlesSizes">18sp</dimen>
+    <dimen name="matchConstraint">0dp</dimen>
+    <dimen name="topViewMargins">8dp</dimen>
+    <dimen name="topViewHeight">280dp</dimen>
+    <dimen name="opponentBoardTitle">103dp</dimen>
+    <dimen name="gridSideMargins">16dp</dimen>
+</resources>
